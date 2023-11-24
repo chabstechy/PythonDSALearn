@@ -31,14 +31,14 @@ class LL:
       print("size > 0")
     self.size = self.size + 1
 
-def insertFirst(self,value):
+  def insertFirst(self,value):
     temp = self.Node(value,self.head)
     self.head = temp
     self.size = self.size + 1
     if(self.tail==None):
       self.tail = self.head
-
-def insertAtIndex(self,value, index):
+        
+  def insertAtIndex(self,value, index):
     if(index < 1 or index > self.size + 1):
       print("Invalid index")
       return
@@ -59,6 +59,7 @@ def insertAtIndex(self,value, index):
           break
         i = i + 1
         temp1 = temp1.next
+
 #main
 
 L1 = LL()
